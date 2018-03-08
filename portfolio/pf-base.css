@@ -1,3 +1,40 @@
 html {
-	box-sizing: 
+	/* Constrains box to whatever value I initially set */
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 100%;
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+
+a {
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.pf-sidebar {
+	/*Test Color*/
+	background-color: gray;
+	/* Viewport width*/
+	padding: 5vw; 
+}
+
+.pf-grid {
+	background-color: 
+}
+
+.pf-grid-item {
+	/* Viewport width*/
+	padding: 3vw;
+	/*text color*/
+	background-color: gray;
 }

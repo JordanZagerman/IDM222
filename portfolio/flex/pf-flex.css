@@ -1,0 +1,16 @@
+.pf-container {
+	display: flex;
+}
+
+.pf-grid-item {
+	margin-bottom: 1rem;
+}
+
+/* Small Screens */
+@media only screen and (max-width: 900px) {
+	.pf-container {
+		/* Top to bottom */
+		flex-direction: column;
+
+	}
+}
