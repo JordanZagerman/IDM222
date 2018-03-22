@@ -13,6 +13,8 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
 }
 
 a {
@@ -37,4 +39,72 @@ a {
 	padding: 3vw;
 	/*text color*/
 	background-color: gray;
+}
+.pf-container {
+	display: grid;
+}
+
+.pf-content {
+	padding: 3vh;
+}
+
+.pf-grid-item {
+	margin-bottom: 1rem;
+}
+
+.pf-grid-item:last-child {
+	margin-bottom: 0;
+}
+
+/* Small Screens */
+@media only screen and (max-width: 900px) {
+
+	.pf-sidebar {
+		display: grid;
+		justify-items: center;
+		text-align: center;
+		text-align: center;
+	}
+	.pf-grid {
+		display: grid;
+		/*fraction ratio*/
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-row-gap: 1rem; 
+	}
+
+}
+
+/*Large Screens*/
+@media only screen and (min-width: 901px) {
+	.pf-container {
+		/*1 column occupies 33% the other occupies 66%*/
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: auto;
+	}
+
+	.pf-content {
+		/*starts at the second column of the grid*/
+		grid-column-start: 2
+	}
+
+	.pf-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 1rem;
+	}
+	.pf-sidebar {
+		position: fixed;
+		height: 100%;
+		width: 33vw;
+	}
+
+	.pf-grid {
+
+	}
+
+	.pf-grid-item {
+
+	}
 }
