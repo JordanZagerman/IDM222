@@ -1,0 +1,181 @@
+html {
+	/* Constrains box to whatever value I initially set */
+	box-sizing: border-box;
+}
+
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-size: 100%;
+	line-height: 1.5;
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*thumbnail preview images*/
+.thumbnail {
+	width: 100%;
+	height: auto;
+}
+
+.pf-sidebar {
+	/*Test Color*/
+	background-color: gray;
+	/* Viewport width*/
+	padding: 5vw; 
+}
+
+.pf-grid {
+	background-color: black;
+}
+
+.pf-grid-item {
+	/* Viewport width*/
+	padding: 3vw;
+	/*text color*/
+	width: 100%;
+    height: 100%;
+	background-image: url('../img/podcast-cover-500.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 1rem;
+}
+
+.pf-grid-item-about {
+	/* Viewport width*/
+	padding: 3vw;
+	/*text color*/
+	width: 100%;
+    height: 100%;
+	background-image: url('../img/city-stock.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 1rem;
+}
+
+.pf-grid-item-podcast {
+	/* Viewport width*/
+	padding: 3vw;
+	/*text color*/
+	width: 100%;
+    height: 100%;
+	background-image: url('../img/podcast-cover-500.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 1rem;
+}
+
+.pf-grid-item-skills {
+	/* Viewport width*/
+	padding: 3vw;
+	/*text color*/
+	width: 100%;
+    height: 100%;
+	background-image: url('../img/code-stock.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 1rem;
+}
+/*.pf-grid-item:last-child {
+	margin-bottom: 0;
+}
+*/
+img {
+	padding: 0;
+	margin: 0;
+}
+.pf-container {
+	display: grid;
+}
+
+.pf-content {
+	padding: 3vh;
+}
+
+
+
+
+/* Small Screens */
+@media only screen and (max-width: 900px) {
+
+	.pf-sidebar {
+		display: grid;
+		justify-items: center;
+		text-align: center;
+		text-align: center;
+	}
+	.pf-grid {
+		display: grid;
+		/*fraction ratio*/
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-row-gap: 1rem; 
+	}
+	/*Podcast image background*/
+	#podcast-grid-box {
+		position: absolute;
+		/*accross the whole screen*/
+		width: 100vw;
+		height: auto;
+		background-image: url('../img/podcast-cover-500.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}	
+	.pf-content {
+		padding: 0;
+	}
+
+}
+
+/*Large Screens*/
+@media only screen and (min-width: 901px) {
+	.pf-container {
+		/*1 column occupies 33% the other occupies 66%*/
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: auto;
+	}
+
+	.pf-content {
+		/*starts at the second column of the grid*/
+		grid-column-start: 2
+	}
+
+
+	.pf-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 1rem;
+	}
+
+	.pf-sidebar {
+		position: fixed;
+		height: 100%;
+		width: 33vw;
+	}
+
+	.pf-grid {
+
+	}
