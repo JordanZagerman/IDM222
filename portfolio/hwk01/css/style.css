@@ -4,10 +4,10 @@ html {
 	box-sizing: border-box;
 }
 
-* {
+/** {
 	border: 1px solid green;
 }
-
+*/
 *,
 *:before,
 *:after {
@@ -291,11 +291,11 @@ img {
 
 	}
 
-/*Large Screens*/
+/*Larger Screens*/
 @media only screen and (min-width: 1280px) {
 	.pf-container {
 		/*1 column occupies 33% the other occupies 66%*/
-		grid-template-columns: 1fr 2fr;
+		grid-template-columns: 25%;
 		grid-template-rows: auto;
 	}
 
@@ -306,7 +306,7 @@ img {
 
 	.pf-grid {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: auto;
 		grid-gap: 1rem;
 	}
@@ -314,7 +314,7 @@ img {
 	.pf-sidebar {
 		position: fixed;
 		height: 100%;
-		width: 33vw;
+		width: 25vw;
 	}
 
 	.pf-grid {
