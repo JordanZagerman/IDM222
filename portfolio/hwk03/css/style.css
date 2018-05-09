@@ -1,0 +1,399 @@
+
+html {
+	/* Constrains box to whatever value I initially set */
+	box-sizing: border-box;
+}
+
+/** {
+	border: 1px solid green;
+}
+*/
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	
+	padding: 0;
+	margin: 0;
+	background-color: black;
+	color: white;
+}
+
+h1 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 250%;
+	font-weight: bold;
+}
+
+p {
+
+	font-size: 150%;
+	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 100%
+	font-weight: bold;
+}
+
+
+a {
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
+}
+ 
+span {
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+	cursor:;
+  z-index: 1;
+}
+/*thumbnail preview images*/
+.thumbnail {
+	width: 100%;
+	height: auto;
+}
+
+
+
+.pf-sidebar {
+	/*Test Color*/
+	background-color: #404040;
+	/* Viewport width*/
+	padding: 5vw; 
+	position: relative;
+}
+
+.pf-grid {
+	background-color: #999797;
+}
+
+.pf-grid-item-work {
+	padding: 3vw;
+	width: 100%;
+    height: 100%;
+	background-image: url('../img/work-stock.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.pf-grid-item-about {
+	padding: 3vw;
+	width: 100%;
+    height: 100%;
+	background-image: url('../img/city-stock.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.pf-grid-item-podcast {
+	padding: 3vw;
+	width: 100%;
+    height: 100%;
+	background-image: url('../img/podcast-cover-500.png');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.pf-grid-item-skills {
+	padding: 3vw;
+	width: 100%;
+    height: 100%;
+	background-image: url('../img/code-stock.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.pf-grid-item-other {
+	padding: 3vw;
+	width: 100%;
+    height: 100%;
+	background-image: url('../img/other-stock.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 1rem;
+    position: relative;
+
+}
+
+.pf-grid-item-contact {
+	padding: 3vw;
+	width: 100%;
+    height: 100%;
+	background-image: url('../img/contact-stock.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/*.pf-grid-item:last-child {
+	margin-bottom: 0;
+}
+*/
+img {
+	padding: 0;
+	margin: 0;
+}
+.pf-container {
+	display: grid;
+}
+
+.pf-content {
+	padding: 3vw;
+
+}
+
+/*------------------SVG(s)-----------------------*/
+#leather-flag-svg {
+
+}
+
+@keyframes grow-heart {
+	0% {
+		transform: 
+	}
+}
+
+/*-------Leather Flag--------*/
+
+.leather-heart {
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -ms-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.leather-heart:hover {
+	fill: #ff63d8;
+}
+
+/*-----------Pride Flag----------------*/
+
+#black-back, .purple-stripe, .blue-stripe, .green-stripe, .yellow-stripe, .orange-stripe, .red-stripe {
+	stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  stroke-linecap: butt;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -ms-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+#black-back:hover, .purple-stripe:hover, .blue-stripe:hover, .green-stripe:hover, .yellow-stripe:hover, .orange-stripe:hover, .red-stripe:hover {
+  fill: #4f1d00;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 125;
+}
+
+/*-------Leather Logo------*/
+
+#leather-logo {
+  stroke-width: 1px;
+  stroke-dasharray: 125;
+  stroke-dashoffset: -125;
+  stroke-linecap: butt;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+
+}
+
+#leather-logo:hover {
+	/*brown leather*/
+	fill: #4f1d00;
+/*	stroke-dashoffset: 0;
+	stroke-dasharray: 700;*/
+	stroke-width: 10;
+
+}
+
+/*----Folsom Flag-----*/
+
+#red_border {
+  fill: none;
+  stroke: #e84525;
+  stroke-width: 4px;
+/*  stroke-dasharray: 125;
+  stroke-dashoffset: -125;*/
+  stroke-linecap: butt;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -ms-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+#red_border:hover {
+	stroke-width:8px;
+
+}
+
+/* Small Screens */
+@media only screen (min-width: 320px) and (max-width: 479px) {
+
+	.pf-sidebar {
+		display: grid;
+		justify-items: center;
+		text-align: center;
+		text-align: center;
+	}
+	.pf-grid {
+		display: grid;
+		/*fraction ratio*/
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-row-gap: 1rem; 
+	}
+	/*Podcast image background*/
+	#podcast-grid-box {
+		position: absolute;
+		/*accross the whole screen*/
+		width: 100vw;
+		height: auto;
+		background-image: url('../img/podcast-cover-500.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+	}	
+	.pf-content {
+		padding: 0;
+	}
+
+	.linklessTitle {
+		text-align: center;
+	}
+
+	.postInfo {
+		text-align: center;
+	}
+
+	.paragraph {
+		padding: 3vw;
+	}
+	img {
+  		filter: none;
+  		-webkit-filter: none;
+	}
+
+	#pf-faqs {
+	padding: 3vw;
+	}
+
+}
+
+/*Medium Screens*/
+@media only screen and (min-width: 480px) {
+	.pf-container {
+		/*1 column occupies 33% the other occupies 66%*/
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+
+	.pf-content {
+		/*starts at the second column of the grid*/
+		grid-column-start: 1
+	}
+
+
+	.pf-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 1rem;
+	}
+
+	.pf-sidebar {
+		display: grid;
+		justify-items: center;
+		text-align: center;
+		text-align: center;
+	}
+
+	.pf-grid {
+
+	}
+
+/*Large Screens*/
+@media only screen and (min-width: 768px) {
+	.pf-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+
+	.pf-content {
+		/*starts at the second column of the grid*/
+		grid-column-start: 1
+	}
+
+
+	.pf-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 1rem;
+	}
+
+/*Larger Screens*/
+@media only screen and (min-width: 1280px) {
+	.pf-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+
+	.pf-content {
+		/*starts at the second column of the grid*/
+		grid-column-start: 1;
+	}
+
+	.pf-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		grid-gap: 1rem;
+	}
+
+	.pf-sidebar {
+		position: fixed;
+		height: 100%;
+		width: 25vw;
+	}
+
+	.pf-grid {
+
+	}
+
